@@ -28,17 +28,15 @@ body {
     align-items: center;
     border-radius: 50%;
     background-image: linear-gradient(to right, #9572FC, #43E7AD, #E2D45C);
-
-
 }
 
-#profileImageBorder, 
-li{
-    transition: 0.2s;;
+#profileImageBorder,
+li {
+    transition: 0.2s;
 }
 
-#profileImageBorder:hover, 
-li:hover{
+#profileImageBorder:hover,
+li:hover {
     transform: scale(1.1);
 }
 
@@ -109,43 +107,45 @@ ul {
 
 /* Animation */
 
-header div{
+header div {
     animation: fromTop 1s 0.3s backwards;
 }
 
-main section{
+main section {
     animation: fromBottom 1s 0.3s both;
 }
 
-main section:nth-child(1){
+main section:nth-child(1) {
     animation-delay: 0;
 }
 
-main section:nth-child(2){
+main section:nth-child(2) {
     animation-delay: 0.6s;
 }
 
-main section:nth-child(3){
+main section:nth-child(3) {
     animation-delay: 0.9s;
 }
 
 @keyframes fromTop {
-    from{
+    from {
         opacity: 0;
         transform: translateY(-30px);
     }
-    to{
+
+    to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
 @keyframes fromBottom {
-    from{
+    from {
         opacity: 0;
         transform: translateY(30px);
     }
-    to{
+
+    to {
         opacity: 1;
         transform: translateY(0);
     }
